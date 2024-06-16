@@ -1,30 +1,93 @@
-# Stock_Market_Prediction
+# Stock Price Prediction Project with Tesla Stock Data
 
-Here's a description of what each part of the code does:
+This project involves analyzing historical stock price data of Tesla (TSLA) and building a simple linear regression model to predict stock prices. The project utilizes Python, Pandas, Matplotlib, and Plotly for data manipulation, visualization, and modeling.
 
-1. **Importing Libraries**: The script starts by importing the necessary Python libraries, including Pandas, NumPy, and Matplotlib for data manipulation and visualization. It also imports Plotly for interactive plotting, as well as some modules for offline Plotly usage.
+## Table of Contents
 
-2. **Reading Data**: It reads stock price data from a CSV file named 'TSLA.csv' into a Pandas DataFrame called 'tesla'.
+1. [Introduction](#introduction)
+2. [Dependencies](#dependencies)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [File Descriptions](#file-descriptions)
+6. [Results](#results)
+7. [License](#license)
 
-3. **Data Inspection**: The code performs some initial data inspection tasks:
-   - It prints information about the DataFrame, including data types and non-null counts.
-   - Converts the 'Date' column to datetime format.
-   - Prints the range of dates in the dataset and the total number of days covered.
+---
 
-4. **Descriptive Statistics**: It displays descriptive statistics (mean, standard deviation, etc.) for the columns 'Open', 'High', 'Low', 'Close', and 'Adj Close' using the `describe()` method.
+## Introduction
 
-5. **Box Plot**: It creates a box plot for the columns 'Open', 'High', 'Low', 'Close', and 'Adj Close' to visualize the distribution of these values.
+This project aims to analyze historical stock price data of Tesla (TSLA) and build a predictive model using linear regression. The data is sourced from a CSV file (`TSLA.csv`) containing daily stock prices including Open, High, Low, Close, and Adjusted Close.
 
-6. **Interactive Time Series Plot**: The script creates an interactive time series plot using Plotly to visualize the closing stock prices of Tesla over time. The plot is configured with a title and labeled axes.
+## Dependencies
 
-7. **Data Splitting**: The code prepares the data for building a regression model. It splits the data into training and testing sets using the `train_test_split` function from scikit-learn.
+To run this project, you'll need the following Python libraries:
 
-8. **Feature Scaling**: It performs feature scaling on the training data using standardization (StandardScaler) from scikit-learn.
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- Scikit-learn
 
-9. **Linear Regression Model**: It creates a linear regression model using scikit-learn's `LinearRegression` class and fits it to the training data.
+---
 
-10. **Plotting Predictions**: The code creates a plot showing both the actual and predicted closing stock prices on the training data.
+## Installation
 
-11. **Model Evaluation**: It computes and prints the model evaluation metrics, including the R-squared score and Mean Squared Error (MSE), for both the training and testing datasets.
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/bhoomikamittal8/CodeClause_DataScienceIntern/tree/main/Stock_Market_Prediction
+   cd Stock_Market_Prediction
+   ```
 
-In summary, this script loads and analyzes Tesla stock price data, performs data visualization, builds a simple linear regression model to predict stock prices based on the day index, and evaluates the model's performance on training and testing data. The results of the model evaluation are printed at the end of the script.
+2. **Install dependencies:**
+   ```
+   pip install -r requirements.txt
+   ```
+
+---
+
+## Usage
+
+1. **Data Preparation:**
+   - Ensure `TSLA.csv` is in the project directory.
+   - Run the Jupyter Notebook or Python script to load and preprocess the data.
+
+2. **Exploratory Data Analysis (EDA):**
+   - Analyze basic statistics of the data.
+   - Visualize stock prices using Matplotlib and Plotly.
+
+3. **Model Building:**
+   - Split data into training and testing sets.
+   - Scale features if necessary (noted but not implemented in current code).
+
+4. **Model Evaluation:**
+   - Train a linear regression model.
+   - Evaluate the model using metrics like R-squared and Mean Squared Error (MSE).
+
+5. **Visualization:**
+   - Plot actual vs. predicted stock prices using Plotly.
+
+6. **Interpretation:**
+   - Examine scores and metrics to assess the model's performance.
+
+---
+
+## File Descriptions
+
+- **`TSLA.csv`**: Contains historical stock price data for Tesla.
+- **`Stock_Price_Prediction.ipynb`**: Jupyter Notebook containing the Python code for data analysis, visualization, model building, and evaluation.
+
+---
+
+## Results
+
+The project demonstrates basic steps in analyzing stock price data and building a linear regression model for prediction. Results include visualizations of stock prices over time and the performance metrics of the predictive model.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact 📞
+
+#### Feel free to email me or hit me up on [LinkedIn](https://www.linkedin.com/in/bhoomikamittal/)
